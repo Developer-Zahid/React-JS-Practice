@@ -1,0 +1,56 @@
+$colo-primary: #61dafb;
+$colo-text: #ffffff;
+$colo-bg: #282c34;
+
+:root{
+    font-size: 10px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    color: $colo-text;
+    font-size: 1.6rem;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,'Fira Sans','Droid Sans','Helvetica Neue',sans-serif;
+    background-color: $colo-bg;
+}
+
+.container{
+    width: 100%;
+    max-width: 114rem;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.header{
+    &__title{
+        color: $colo-primary;
+        font-size: 5rem;
+        margin-bottom: 3rem;
+    }
+}
+
+.navbar{
+    &__item{
+        list-style-image: url(../images/list.png);
+        list-style-position: inside;
+    }
+    &__link{
+        color: $colo-text;
+        font-size: 3rem;
+        text-decoration: none;
+        transition: all linear .3s;
+        text-underline-offset: 0.5rem;
+        &:hover{
+            color: $colo-primary;
+            text-decoration: underline $colo-text;
+            text-underline-offset: 1rem;
+        }
+    }
+}
